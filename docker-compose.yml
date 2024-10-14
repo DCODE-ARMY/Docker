@@ -1,9 +1,9 @@
-version: '3'
+
 services:
   firstweb:
     build: .
     ports:
-        - 8000:8000
+        - 80:80
     environment:
         - PYTHONBUFFERED=1
   
