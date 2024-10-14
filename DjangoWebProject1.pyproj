@@ -54,6 +54,7 @@
     <Folder Include="DjangoWebProject1\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".travis.yml" />
     <Content Include="calculator\templates\calculator\index.html" />
     <Content Include="docker-compose.yml" />
     <Content Include="Dockerfile" />

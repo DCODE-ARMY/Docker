@@ -5,3 +5,29 @@ before_install:
     - docker build -t project1 .  
 script: 
     - docker run -e CI=true project1 python manage.py test 
+deploy:
+    provider: elasticbeanstalk 
+    region: "ap-south-1"
+    app: "project"
+    env: "Project-env"
+    bucket_name: "elasticbeanstalk-ap-south-1-864899847186"
+    bucket_path: "docker"
+    on:
+        branch: master
+    access_key_id: $AWS_Access_Key
+    secret_access_key: "$AWS_Secret_Key"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
