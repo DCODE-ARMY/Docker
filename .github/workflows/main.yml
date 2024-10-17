@@ -9,6 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+  
+      - name: enable de-bug
+        run: set -x
+
       - run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_KEY }}
       - run: docker build -t project .
       - run: docker run -e CI=true project python manage.py test 
