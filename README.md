@@ -8,8 +8,6 @@ Welcome to the **Docker Django Deployment Project** GitHub repository! This proj
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## **Overview**
 The **Docker Django Deployment Project** provides hands-on experience with Docker containerization, CI/CD using GitHub Actions, and cloud deployment on AWS. This project is ideal for those who want to understand how to containerize web applications, automate deployment pipelines, and deploy to cloud environments.
